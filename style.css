@@ -1,0 +1,230 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: #333;
+    margin: 0;
+    padding: 40px;
+}
+
+/* Header */
+header {
+    background-color: #142d4c;
+    color: #ececec;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+nav ul {
+    list-style-type: none;    
+    margin: 0;                  
+    padding: 0;                 
+    display: flex;              
+    justify-content: center;    }
+
+nav ul li {
+    margin: 0 20px;            
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 14px 20px;
+    display: block;             
+    transition: background-color 0.3s ease; 
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* Headings */
+h1, h2 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form select, form button {
+    padding: 12px;
+    margin: 8px 0;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    background-color: #fafafa;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+    border-color: #f95959;
+    background-color: #fff;
+}
+
+form button {
+    background-color: #f95959;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f95959;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Track Cards (For all songs and track pages) */
+.track-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.track {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 15px;
+    width: 280px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    border-radius: 6px;
+}
+
+.track:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.track h3 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+.track p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.track .genre {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.track .release-year {
+    font-style: italic;
+    color: #3498db;
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+/* Styling for the Delete Button */
+.delete-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #e74c3c; /* Red background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.delete-btn:active {
+    background-color: #e74c3c;
+    transform: scale(0.98); /* Slightly shrink on click */
+}
+
+.delete-btn:focus {
+    outline: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 30px;
+}
+.cool-photo {
+    text-align: center;   /* Center the image */
+    margin-top: 20px;      /* Add some space between nav and the image */
+}
+
+.cool-photo img {
+    max-width: 100%;        /* Make sure the image doesn't overflow the screen */
+    height: auto;           /* Maintain the aspect ratio of the image */
+    border-radius: 8px;     
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
+h1 {
+    background-color: #f95959;
+}
